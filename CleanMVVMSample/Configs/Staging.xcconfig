@@ -1,0 +1,20 @@
+//
+//  Staging.xcconfig
+//  CleanMVVMSample
+//
+//  Created by Emmanuel Okwara on 17/10/2019.
+//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Server URL
+ROOT_URL = https:/$()/kingsmen-ah-backend-staging.herokuapp.com
+
+// API Keys
+// API_KEY = 783u9djd8a_hkzos7jd803001nd
+
+// App Settings
+APP_NAME = Sample (Stag)
+APP_BUNDLE_ID = com.macco.CleanMVVMSampleStag
