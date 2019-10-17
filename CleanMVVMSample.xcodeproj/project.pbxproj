@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		12955BE72357A1EB00ECD095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12955BE52357A1EB00ECD095 /* LaunchScreen.storyboard */; };
 		12955BF22357A1EC00ECD095 /* CleanMVVMSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12955BF12357A1EC00ECD095 /* CleanMVVMSampleTests.swift */; };
 		12955BFD2357A1EC00ECD095 /* CleanMVVMSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12955BFC2357A1EC00ECD095 /* CleanMVVMSampleUITests.swift */; };
+		12DCF435235880800087A23C /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCF434235880800087A23C /* Environment.swift */; };
+		5B72A7D270970872075C00C8 /* Pods_CleanMVVMSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED60810A824F21A78F547445 /* Pods_CleanMVVMSampleTests.framework */; };
+		8713CEEE7635FC8CF8420ED2 /* Pods_CleanMVVMSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE26F42EC74628D10F9D20B /* Pods_CleanMVVMSample.framework */; };
+		F40A259C8054C3D0EAF8C6C6 /* Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE7ED5733D825D9DF787D2F /* Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09E1DD3726C11AA385D1925D /* Pods-CleanMVVMSampleTests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.debug staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.debug staging.xcconfig"; sourceTree = "<group>"; };
+		122E10F823586480002A88E8 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		122E10F92358648C002A88E8 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		122E10FA23586496002A88E8 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		12955BD72357A1E900ECD095 /* CleanMVVMSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanMVVMSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12955BDA2357A1E900ECD095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12955BDC2357A1E900ECD095 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,33 @@
 		12955BF82357A1EC00ECD095 /* CleanMVVMSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanMVVMSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12955BFC2357A1EC00ECD095 /* CleanMVVMSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMVVMSampleUITests.swift; sourceTree = "<group>"; };
 		12955BFE2357A1EC00ECD095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12DCF434235880800087A23C /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1A7A543C0B48CEE7E3F70831 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug staging.xcconfig"; sourceTree = "<group>"; };
+		31B1C2370A85AE229752D769 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.release staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.release staging.xcconfig"; sourceTree = "<group>"; };
+		3FED47155CEC8BFEC1E64F4E /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.release production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.release production.xcconfig"; sourceTree = "<group>"; };
+		59E127483A1A322FCD282E24 /* Pods-CleanMVVMSample.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.release production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.release production.xcconfig"; sourceTree = "<group>"; };
+		774E423E0ACB48AF870528CD /* Pods-CleanMVVMSample.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.release development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.release development.xcconfig"; sourceTree = "<group>"; };
+		7D2892E34515D8EAA45B4D5E /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug development.xcconfig"; sourceTree = "<group>"; };
+		847D604A89977871C6C68F03 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.release development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.release development.xcconfig"; sourceTree = "<group>"; };
+		88DAD5FB3295756A6D640538 /* Pods-CleanMVVMSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.release.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.release.xcconfig"; sourceTree = "<group>"; };
+		9F2D6500537995D182A375A1 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9FE7ED5733D825D9DF787D2F /* Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91B51B12D38F3E3DBC0EAB2 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB02D0ED194FEADFFC680F63 /* Pods-CleanMVVMSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.release.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADE26F42EC74628D10F9D20B /* Pods_CleanMVVMSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanMVVMSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2BA32B185AA868523C2E1F /* Pods-CleanMVVMSampleTests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.debug production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.debug production.xcconfig"; sourceTree = "<group>"; };
+		C710AB48C6FA772B2F3CC15F /* Pods-CleanMVVMSampleTests.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.debug development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.debug development.xcconfig"; sourceTree = "<group>"; };
+		C902C780677E2EB7A4A615B4 /* Pods-CleanMVVMSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.debug.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.debug.xcconfig"; sourceTree = "<group>"; };
+		D11E7BE91E537FFA07E5F7A9 /* Pods-CleanMVVMSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D28E8A7CB83629FD2B6F96FB /* Pods-CleanMVVMSampleTests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.release production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.release production.xcconfig"; sourceTree = "<group>"; };
+		E4BCBAC0C778C9BA6E62CD53 /* Pods-CleanMVVMSample.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.debug development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.debug development.xcconfig"; sourceTree = "<group>"; };
+		E5E1BE120BB88C50B5B01474 /* Pods-CleanMVVMSampleTests.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.release development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.release development.xcconfig"; sourceTree = "<group>"; };
+		EA6785EBC8E91F2E161E2FD3 /* Pods-CleanMVVMSample.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.debug staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.debug staging.xcconfig"; sourceTree = "<group>"; };
+		EB70C8608BF6A0BCCA72B262 /* Pods-CleanMVVMSampleTests.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.release staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.release staging.xcconfig"; sourceTree = "<group>"; };
+		ED60810A824F21A78F547445 /* Pods_CleanMVVMSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanMVVMSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF13515FBDED738B28850B26 /* Pods-CleanMVVMSample.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.debug production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.debug production.xcconfig"; sourceTree = "<group>"; };
+		F0548A40BE4C109D228A5347 /* Pods-CleanMVVMSample.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.release staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.release staging.xcconfig"; sourceTree = "<group>"; };
+		F0E1CD1836B1634C3A241EC4 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8713CEEE7635FC8CF8420ED2 /* Pods_CleanMVVMSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B72A7D270970872075C00C8 /* Pods_CleanMVVMSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +107,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40A259C8054C3D0EAF8C6C6 /* Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122E10F723586417002A88E8 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				12955BE82357A1EB00ECD095 /* Info.plist */,
+				122E10F823586480002A88E8 /* Development.xcconfig */,
+				122E10F92358648C002A88E8 /* Staging.xcconfig */,
+				122E10FA23586496002A88E8 /* Production.xcconfig */,
+				12DCF434235880800087A23C /* Environment.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		12955BCE2357A1E900ECD095 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +133,8 @@
 				12955BF02357A1EC00ECD095 /* CleanMVVMSampleTests */,
 				12955BFB2357A1EC00ECD095 /* CleanMVVMSampleUITests */,
 				12955BD82357A1E900ECD095 /* Products */,
+				F236BF39ADD1346CDEB8449C /* Pods */,
+				3D4399EDBD171793DA2D9374 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +157,7 @@
 				12955BE02357A1E900ECD095 /* Main.storyboard */,
 				12955BE32357A1EB00ECD095 /* Assets.xcassets */,
 				12955BE52357A1EB00ECD095 /* LaunchScreen.storyboard */,
-				12955BE82357A1EB00ECD095 /* Info.plist */,
+				122E10F723586417002A88E8 /* Configs */,
 			);
 			path = CleanMVVMSample;
 			sourceTree = "<group>";
@@ -128,6 +180,47 @@
 			path = CleanMVVMSampleUITests;
 			sourceTree = "<group>";
 		};
+		3D4399EDBD171793DA2D9374 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADE26F42EC74628D10F9D20B /* Pods_CleanMVVMSample.framework */,
+				9FE7ED5733D825D9DF787D2F /* Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework */,
+				ED60810A824F21A78F547445 /* Pods_CleanMVVMSampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F236BF39ADD1346CDEB8449C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C902C780677E2EB7A4A615B4 /* Pods-CleanMVVMSample.debug.xcconfig */,
+				88DAD5FB3295756A6D640538 /* Pods-CleanMVVMSample.release.xcconfig */,
+				A91B51B12D38F3E3DBC0EAB2 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug.xcconfig */,
+				9F2D6500537995D182A375A1 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release.xcconfig */,
+				D11E7BE91E537FFA07E5F7A9 /* Pods-CleanMVVMSampleTests.debug.xcconfig */,
+				AB02D0ED194FEADFFC680F63 /* Pods-CleanMVVMSampleTests.release.xcconfig */,
+				E4BCBAC0C778C9BA6E62CD53 /* Pods-CleanMVVMSample.debug development.xcconfig */,
+				EA6785EBC8E91F2E161E2FD3 /* Pods-CleanMVVMSample.debug staging.xcconfig */,
+				EF13515FBDED738B28850B26 /* Pods-CleanMVVMSample.debug production.xcconfig */,
+				774E423E0ACB48AF870528CD /* Pods-CleanMVVMSample.release development.xcconfig */,
+				F0548A40BE4C109D228A5347 /* Pods-CleanMVVMSample.release staging.xcconfig */,
+				59E127483A1A322FCD282E24 /* Pods-CleanMVVMSample.release production.xcconfig */,
+				7D2892E34515D8EAA45B4D5E /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug development.xcconfig */,
+				1A7A543C0B48CEE7E3F70831 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug staging.xcconfig */,
+				F0E1CD1836B1634C3A241EC4 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug production.xcconfig */,
+				847D604A89977871C6C68F03 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release development.xcconfig */,
+				31B1C2370A85AE229752D769 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release staging.xcconfig */,
+				3FED47155CEC8BFEC1E64F4E /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release production.xcconfig */,
+				C710AB48C6FA772B2F3CC15F /* Pods-CleanMVVMSampleTests.debug development.xcconfig */,
+				09E1DD3726C11AA385D1925D /* Pods-CleanMVVMSampleTests.debug staging.xcconfig */,
+				AF2BA32B185AA868523C2E1F /* Pods-CleanMVVMSampleTests.debug production.xcconfig */,
+				E5E1BE120BB88C50B5B01474 /* Pods-CleanMVVMSampleTests.release development.xcconfig */,
+				EB70C8608BF6A0BCCA72B262 /* Pods-CleanMVVMSampleTests.release staging.xcconfig */,
+				D28E8A7CB83629FD2B6F96FB /* Pods-CleanMVVMSampleTests.release production.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12955C012357A1EC00ECD095 /* Build configuration list for PBXNativeTarget "CleanMVVMSample" */;
 			buildPhases = (
+				096CD7F23D2F484B1A5BA800 /* [CP] Check Pods Manifest.lock */,
 				12955BD32357A1E900ECD095 /* Sources */,
 				12955BD42357A1E900ECD095 /* Frameworks */,
 				12955BD52357A1E900ECD095 /* Resources */,
+				9B93C51285EA6D8BF6FB8D36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12955C042357A1EC00ECD095 /* Build configuration list for PBXNativeTarget "CleanMVVMSampleTests" */;
 			buildPhases = (
+				D0C8A1A1717CEC8AD169C5AD /* [CP] Check Pods Manifest.lock */,
 				12955BE92357A1EC00ECD095 /* Sources */,
 				12955BEA2357A1EC00ECD095 /* Frameworks */,
 				12955BEB2357A1EC00ECD095 /* Resources */,
@@ -170,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12955C072357A1EC00ECD095 /* Build configuration list for PBXNativeTarget "CleanMVVMSampleUITests" */;
 			buildPhases = (
+				FB9B8B4C7E8E4FB5B7FDD768 /* [CP] Check Pods Manifest.lock */,
 				12955BF42357A1EC00ECD095 /* Sources */,
 				12955BF52357A1EC00ECD095 /* Frameworks */,
 				12955BF62357A1EC00ECD095 /* Resources */,
+				AE8BF367AB7D6F9D7DA592C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,12 +352,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		096CD7F23D2F484B1A5BA800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanMVVMSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B93C51285EA6D8BF6FB8D36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE8BF367AB7D6F9D7DA592C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C8A1A1717CEC8AD169C5AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanMVVMSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB9B8B4C7E8E4FB5B7FDD768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanMVVMSample-CleanMVVMSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12955BD32357A1E900ECD095 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				12955BDF2357A1E900ECD095 /* ViewController.swift in Sources */,
+				12DCF435235880800087A23C /* Environment.swift in Sources */,
 				12955BDB2357A1E900ECD095 /* AppDelegate.swift in Sources */,
 				12955BDD2357A1E900ECD095 /* SceneDelegate.swift in Sources */,
 			);
@@ -316,8 +518,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		12955BFF2357A1EC00ECD095 /* Debug */ = {
+		12955BFF2357A1EC00ECD095 /* Debug Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122E10F823586480002A88E8 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -374,10 +577,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug Development";
 		};
-		12955C002357A1EC00ECD095 /* Release */ = {
+		12955C002357A1EC00ECD095 /* Release Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122E10F823586480002A88E8 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -428,44 +632,47 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release Development";
 		};
-		12955C022357A1EC00ECD095 /* Debug */ = {
+		12955C022357A1EC00ECD095 /* Debug Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4BCBAC0C778C9BA6E62CD53 /* Pods-CleanMVVMSample.debug development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CleanMVVMSample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CleanMVVMSample;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Debug Development";
 		};
-		12955C032357A1EC00ECD095 /* Release */ = {
+		12955C032357A1EC00ECD095 /* Release Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774E423E0ACB48AF870528CD /* Pods-CleanMVVMSample.release development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CleanMVVMSample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CleanMVVMSample;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = "Release Development";
 		};
-		12955C052357A1EC00ECD095 /* Debug */ = {
+		12955C052357A1EC00ECD095 /* Debug Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C710AB48C6FA772B2F3CC15F /* Pods-CleanMVVMSampleTests.debug development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -483,10 +690,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanMVVMSample.app/CleanMVVMSample";
 			};
-			name = Debug;
+			name = "Debug Development";
 		};
-		12955C062357A1EC00ECD095 /* Release */ = {
+		12955C062357A1EC00ECD095 /* Release Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E1BE120BB88C50B5B01474 /* Pods-CleanMVVMSampleTests.release development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,10 +712,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanMVVMSample.app/CleanMVVMSample";
 			};
-			name = Release;
+			name = "Release Development";
 		};
-		12955C082357A1EC00ECD095 /* Debug */ = {
+		12955C082357A1EC00ECD095 /* Debug Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2892E34515D8EAA45B4D5E /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,10 +732,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CleanMVVMSample;
 			};
-			name = Debug;
+			name = "Debug Development";
 		};
-		12955C092357A1EC00ECD095 /* Release */ = {
+		12955C092357A1EC00ECD095 /* Release Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847D604A89977871C6C68F03 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,7 +752,479 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CleanMVVMSample;
 			};
-			name = Release;
+			name = "Release Development";
+		};
+		12BE2AC32358618300AE5BA8 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122E10F92358648C002A88E8 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Staging";
+		};
+		12BE2AC42358618300AE5BA8 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA6785EBC8E91F2E161E2FD3 /* Pods-CleanMVVMSample.debug staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSample;
+				PRODUCT_NAME = CleanMVVMSample;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Staging";
+		};
+		12BE2AC52358618300AE5BA8 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E1DD3726C11AA385D1925D /* Pods-CleanMVVMSampleTests.debug staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanMVVMSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanMVVMSample.app/CleanMVVMSample";
+			};
+			name = "Debug Staging";
+		};
+		12BE2AC62358618300AE5BA8 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7A543C0B48CEE7E3F70831 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanMVVMSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CleanMVVMSample;
+			};
+			name = "Debug Staging";
+		};
+		12BE2AC7235861A400AE5BA8 /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122E10FA23586496002A88E8 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Production";
+		};
+		12BE2AC8235861A400AE5BA8 /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF13515FBDED738B28850B26 /* Pods-CleanMVVMSample.debug production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSample;
+				PRODUCT_NAME = CleanMVVMSample;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Production";
+		};
+		12BE2AC9235861A400AE5BA8 /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2BA32B185AA868523C2E1F /* Pods-CleanMVVMSampleTests.debug production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanMVVMSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanMVVMSample.app/CleanMVVMSample";
+			};
+			name = "Debug Production";
+		};
+		12BE2ACA235861A400AE5BA8 /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E1CD1836B1634C3A241EC4 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanMVVMSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CleanMVVMSample;
+			};
+			name = "Debug Production";
+		};
+		12BE2ACB235861AC00AE5BA8 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122E10F92358648C002A88E8 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Staging";
+		};
+		12BE2ACC235861AC00AE5BA8 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0548A40BE4C109D228A5347 /* Pods-CleanMVVMSample.release staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSample;
+				PRODUCT_NAME = CleanMVVMSample;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Staging";
+		};
+		12BE2ACD235861AC00AE5BA8 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB70C8608BF6A0BCCA72B262 /* Pods-CleanMVVMSampleTests.release staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanMVVMSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanMVVMSample.app/CleanMVVMSample";
+			};
+			name = "Release Staging";
+		};
+		12BE2ACE235861AC00AE5BA8 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B1C2370A85AE229752D769 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanMVVMSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CleanMVVMSample;
+			};
+			name = "Release Staging";
+		};
+		12BE2ACF235861C600AE5BA8 /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122E10FA23586496002A88E8 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Production";
+		};
+		12BE2AD0235861C600AE5BA8 /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E127483A1A322FCD282E24 /* Pods-CleanMVVMSample.release production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSample;
+				PRODUCT_NAME = CleanMVVMSample;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Production";
+		};
+		12BE2AD1235861C600AE5BA8 /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28E8A7CB83629FD2B6F96FB /* Pods-CleanMVVMSampleTests.release production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanMVVMSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanMVVMSample.app/CleanMVVMSample";
+			};
+			name = "Release Production";
+		};
+		12BE2AD2235861C600AE5BA8 /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FED47155CEC8BFEC1E64F4E /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanMVVMSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macco.CleanMVVMSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CleanMVVMSample;
+			};
+			name = "Release Production";
 		};
 /* End XCBuildConfiguration section */
 
@@ -550,38 +1232,54 @@
 		12955BD22357A1E900ECD095 /* Build configuration list for PBXProject "CleanMVVMSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12955BFF2357A1EC00ECD095 /* Debug */,
-				12955C002357A1EC00ECD095 /* Release */,
+				12955BFF2357A1EC00ECD095 /* Debug Development */,
+				12BE2AC32358618300AE5BA8 /* Debug Staging */,
+				12BE2AC7235861A400AE5BA8 /* Debug Production */,
+				12955C002357A1EC00ECD095 /* Release Development */,
+				12BE2ACB235861AC00AE5BA8 /* Release Staging */,
+				12BE2ACF235861C600AE5BA8 /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release Development";
 		};
 		12955C012357A1EC00ECD095 /* Build configuration list for PBXNativeTarget "CleanMVVMSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12955C022357A1EC00ECD095 /* Debug */,
-				12955C032357A1EC00ECD095 /* Release */,
+				12955C022357A1EC00ECD095 /* Debug Development */,
+				12BE2AC42358618300AE5BA8 /* Debug Staging */,
+				12BE2AC8235861A400AE5BA8 /* Debug Production */,
+				12955C032357A1EC00ECD095 /* Release Development */,
+				12BE2ACC235861AC00AE5BA8 /* Release Staging */,
+				12BE2AD0235861C600AE5BA8 /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release Development";
 		};
 		12955C042357A1EC00ECD095 /* Build configuration list for PBXNativeTarget "CleanMVVMSampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12955C052357A1EC00ECD095 /* Debug */,
-				12955C062357A1EC00ECD095 /* Release */,
+				12955C052357A1EC00ECD095 /* Debug Development */,
+				12BE2AC52358618300AE5BA8 /* Debug Staging */,
+				12BE2AC9235861A400AE5BA8 /* Debug Production */,
+				12955C062357A1EC00ECD095 /* Release Development */,
+				12BE2ACD235861AC00AE5BA8 /* Release Staging */,
+				12BE2AD1235861C600AE5BA8 /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release Development";
 		};
 		12955C072357A1EC00ECD095 /* Build configuration list for PBXNativeTarget "CleanMVVMSampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12955C082357A1EC00ECD095 /* Debug */,
-				12955C092357A1EC00ECD095 /* Release */,
+				12955C082357A1EC00ECD095 /* Debug Development */,
+				12BE2AC62358618300AE5BA8 /* Debug Staging */,
+				12BE2ACA235861A400AE5BA8 /* Debug Production */,
+				12955C092357A1EC00ECD095 /* Release Development */,
+				12BE2ACE235861AC00AE5BA8 /* Release Staging */,
+				12BE2AD2235861C600AE5BA8 /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release Development";
 		};
 /* End XCConfigurationList section */
 	};

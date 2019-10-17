@@ -4,10 +4,38 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CleanMVVMSample Development.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>CleanMVVMSample Staging.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>CleanMVVMSample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>12955BD62357A1E900ECD095</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>12955BEC2357A1EC00ECD095</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>12955BF72357A1EC00ECD095</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
