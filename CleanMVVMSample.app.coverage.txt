@@ -1,0 +1,351 @@
+/Users/emmanuelokwara/Documents/Projects/CleanMVVMSample/CleanMVVMSample/Application/AppAppearance.swift:
+    1|       |//
+    2|       |//  AppAppearance.swift
+    3|       |//  CleanMVVMSample
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 17/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import Foundation
+   10|       |import UIKit
+   11|       |
+   12|       |final class AppAppearance {
+   13|       |    
+   14|      1|    static func setupAppearance() {
+   15|      1|        UINavigationBar.appearance().barTintColor = .black
+   16|      1|        UINavigationBar.appearance().tintColor = .white
+   17|      1|        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+   18|      1|    }
+   19|       |}
+   20|       |
+   21|       |extension UINavigationController {
+   22|      0|    @objc override open var preferredStatusBarStyle: UIStatusBarStyle {
+   23|      0|        return .lightContent
+   24|      0|    }
+   25|       |}
+
+/Users/emmanuelokwara/Documents/Projects/CleanMVVMSample/CleanMVVMSample/Application/AppDelegate.swift:
+    1|       |//
+    2|       |//  AppDelegate.swift
+    3|       |//  CleanMVVMSample
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 16/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import UIKit
+   10|       |
+   11|       |@UIApplicationMain
+   12|       |class AppDelegate: UIResponder, UIApplicationDelegate {
+   13|       |
+   14|      1|    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+   15|      1|        
+   16|      1|        AppAppearance.setupAppearance()
+   17|      1|        
+   18|      1|        return true
+   19|      1|    }
+   20|       |
+   21|       |}
+   22|       |
+
+/Users/emmanuelokwara/Documents/Projects/CleanMVVMSample/CleanMVVMSample/Application/Configs/Environment.swift:
+    1|       |//
+    2|       |//  Environment.swift
+    3|       |//  CleanMVVMSample
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 17/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import Foundation
+   10|       |
+   11|       |public enum Environment {
+   12|       |    // MARK: - Keys
+   13|       |    enum Keys {
+   14|       |        enum Plist {
+   15|       |            static let rootURL = "ROOT_URL"
+   16|       |        }
+   17|       |    }
+   18|       |    
+   19|       |    
+   20|       |    // MARK: - Plist file
+   21|      1|    private static let infoDictionary: [String: Any] = {
+   22|      1|        guard let dict = Bundle.main.infoDictionary else {
+   23|      0|            fatalError("Plist file not found")
+   24|      1|        }
+   25|      1|        return dict
+   26|      1|    }()
+   27|       |    
+   28|       |    // MARK: - Plist Values
+   29|      1|    static let rootURL: URL = {
+   30|      1|        guard let rootURLString = Environment.infoDictionary[Keys.Plist.rootURL] as? String else {
+   31|      0|            fatalError("Root URL not set in plist for this environment")
+   32|      1|        }
+   33|      1|        
+   34|      1|        guard let url = URL(string: rootURLString) else {
+   35|      0|          fatalError("Root URL is invalid")
+   36|      1|        }
+   37|      1|        return url
+   38|      1|    }()
+   39|       |}
+
+/Users/emmanuelokwara/Documents/Projects/CleanMVVMSample/CleanMVVMSample/Application/SceneDelegate.swift:
+    1|       |//
+    2|       |//  SceneDelegate.swift
+    3|       |//  CleanMVVMSample
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 16/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import UIKit
+   10|       |
+   11|       |class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+   12|       |
+   13|       |    var window: UIWindow?
+   14|       |
+   15|       |
+   16|      1|    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+   17|      1|        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+   18|      1|        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+   19|      1|        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+   20|      1|        guard let _ = (scene as? UIWindowScene) else { return }
+   21|      1|    }
+   22|       |
+   23|      0|    func sceneDidDisconnect(_ scene: UIScene) {
+   24|      0|        // Called as the scene is being released by the system.
+   25|      0|        // This occurs shortly after the scene enters the background, or when its session is discarded.
+   26|      0|        // Release any resources associated with this scene that can be re-created the next time the scene connects.
+   27|      0|        // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
+   28|      0|    }
+   29|       |
+   30|      1|    func sceneDidBecomeActive(_ scene: UIScene) {
+   31|      1|        // Called when the scene has moved from an inactive state to an active state.
+   32|      1|        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+   33|      1|    }
+   34|       |
+   35|      0|    func sceneWillResignActive(_ scene: UIScene) {
+   36|      0|        // Called when the scene will move from an active state to an inactive state.
+   37|      0|        // This may occur due to temporary interruptions (ex. an incoming phone call).
+   38|      0|    }
+   39|       |
+   40|      1|    func sceneWillEnterForeground(_ scene: UIScene) {
+   41|      1|        // Called as the scene transitions from the background to the foreground.
+   42|      1|        // Use this method to undo the changes made on entering the background.
+   43|      1|    }
+   44|       |
+   45|      0|    func sceneDidEnterBackground(_ scene: UIScene) {
+   46|      0|        // Called as the scene transitions from the foreground to the background.
+   47|      0|        // Use this method to save data, release shared resources, and store enough scene-specific state information
+   48|      0|        // to restore the scene back to its current state.
+   49|      0|    }
+   50|       |
+   51|       |
+   52|       |}
+   53|       |
+
+/Users/emmanuelokwara/Documents/Projects/CleanMVVMSample/CleanMVVMSample/Data/Repositories/ArticlesRepository.swift:
+    1|       |//
+    2|       |//  ArticlesRepository.swift
+    3|       |//  CleanMVVMSample
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 18/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import Foundation
+   10|       |
+   11|       |protocol ArticleRepository {
+   12|       |    func fetchArticles(completion: @escaping((_ articles: [Article]) -> Void))
+   13|       |    func fetchSingleArticle(completion: @escaping((_ article: Article) -> Void))
+   14|       |}
+   15|       |
+   16|       |class DefaultArticleRepository: ArticleRepository {
+   17|       |    let articleService: ArticleService
+   18|       |    let lastFetchTime = Date().timeIntervalSinceNow
+   19|       |    
+   20|      1|    init() {
+   21|      1|        self.articleService = DefaultArticleService()
+   22|      1|    }
+   23|       |    
+   24|      1|    func fetchArticles(completion: @escaping (([Article]) -> Void)) {
+   25|      1|//        if now() - lastFetchTime > 30{
+   26|      1|//            //fetch from remote
+   27|      1|//            //update local
+   28|      1|//        } else {
+   29|      1|//            //fetch from loccal
+   30|      1|//            //fetch from remote
+   31|      1|//        }
+   32|      1|        self.articleService.fetchArticles { (articles) in
+   33|      0|            completion(articles)
+   34|      0|        }
+   35|      1|    }
+   36|       |    
+   37|      0|    func fetchSingleArticle(completion: @escaping ((Article) -> Void)) {
+   38|      0|        
+   39|      0|    }
+   40|       |}
+
+/Users/emmanuelokwara/Documents/Projects/CleanMVVMSample/CleanMVVMSample/Infrastructure/Network/NetworkClient.swift:
+    1|       |//
+    2|       |//  NetworkClient.swift
+    3|       |//  CleanMVVMSample
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 18/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import Foundation
+   10|       |import Alamofire
+   11|       |
+   12|       |typealias WebServiceResponse = (Data?, Error?) -> Void
+   13|       |
+   14|       |protocol NetworkClient {
+   15|       |    func execute(url: String, completion: @escaping WebServiceResponse)
+   16|       |}
+   17|       |
+   18|       |class DefaultNetworkClient: NetworkClient {
+   19|      1|    func execute(url: String, completion: @escaping WebServiceResponse) {
+   20|      1|        AF.request(URL(string: url)!).validate().responseJSON { (response) in
+   21|      0|            if let error = response.error {
+   22|      0|                // You can do more error handling logic to determine the error message to be returned to the viewcontroller that made the request
+   23|      0|                completion(nil, error)
+   24|      0|            } else {
+   25|      0|                completion(response.data, nil)
+   26|      0|            }
+   27|      0|        }
+   28|      1|    }
+   29|       |}
+
+/Users/emmanuelokwara/Documents/Projects/CleanMVVMSample/CleanMVVMSample/Infrastructure/Network/Services/ArticleService.swift:
+    1|       |//
+    2|       |//  ArticleService.swift
+    3|       |//  CleanMVVMSample
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 18/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import Foundation
+   10|       |
+   11|       |protocol ArticleService {
+   12|       |    func fetchArticles(completion: @escaping((_ articles: [Article]) -> Void))
+   13|       |//    func fetchSingleArticle(completion: @escaping((_ articles: Article) -> Void))
+   14|       |}
+   15|       |
+   16|       |class DefaultArticleService: ArticleService {
+   17|       |    
+   18|       |    let networkClient: DefaultNetworkClient
+   19|       |    
+   20|      1|    init() {
+   21|      1|        self.networkClient = DefaultNetworkClient()
+   22|      1|    }
+   23|       |    
+   24|      1|    func fetchArticles(completion: @escaping((_ articles: [Article]) -> Void)) {
+   25|      1|        networkClient.execute(url: "http://jsonplaceholder.typicode.com/posts") { (data, error) in
+   26|      0|            guard let data = data else { return }
+   27|      0|            do {
+   28|      0|                let posts = try JSONDecoder().decode([Article].self, from: data)
+   29|      0|                completion(posts)
+   30|      0|            } catch { }
+   31|      0|        }
+   32|      1|        
+   33|      1|        // See if you can use observers instead
+   34|      1|        
+   35|      1|        
+   36|      1|        // Instead of initializing the classes try to use injections
+   37|      1|    }
+   38|       |    
+   39|       |
+   40|       |}
+
+/Users/emmanuelokwara/Documents/Projects/CleanMVVMSample/CleanMVVMSample/Presentation/HomeScene/View/ArticlesTableView/ArticlesTableView.swift:
+    1|       |//
+    2|       |//  ArticlesTableView.swift
+    3|       |//  CleanMVVMSample
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 17/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import UIKit
+   10|       |
+   11|       |extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+   12|      2|    func numberOfSections(in tableView: UITableView) -> Int {
+   13|      2|        return 1
+   14|      2|    }
+   15|       |    
+   16|      2|    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+   17|      2|        return viewModel.items?.count ?? 0
+   18|      2|    }
+   19|       |    
+   20|      0|    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+   21|      0|        guard let cell = tableView.dequeueReusableCell(withIdentifier: ArticleTitleTableViewCell.reuseIdentifier, for: indexPath) as? ArticleTitleTableViewCell else {
+   22|      0|            fatalError("Cannot dequeue reusable cell \(ArticleTitleTableViewCell.self) with reuseIdentifier: \(ArticleTitleTableViewCell.reuseIdentifier)")
+   23|      0|        }
+   24|      0|        
+   25|      0|        cell.articleTitleLbl.text = viewModel.items?[indexPath.row].title
+   26|      0|
+   27|      0|        return cell
+   28|      0|    }
+   29|       |}
+
+/Users/emmanuelokwara/Documents/Projects/CleanMVVMSample/CleanMVVMSample/Presentation/HomeScene/View/HomeViewController.swift:
+    1|       |//
+    2|       |//  HomeViewController.swift
+    3|       |//  CleanMVVMSample
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 17/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import UIKit
+   10|       |
+   11|       |class HomeViewController: UIViewController {
+   12|       |
+   13|       |    @IBOutlet weak var tableView: UITableView!
+   14|       |    let viewModel = ArticlesListViewModel()
+   15|       |    
+   16|      1|    override func viewDidLoad() {
+   17|      1|        super.viewDidLoad()
+   18|      1|
+   19|      1|        // Do any additional setup after loading the view.
+   20|      1|        print("Root URL = \(Environment.rootURL)")
+   21|      1|        
+   22|      1|        viewModel.fetchArticles {
+   23|      0|            self.tableView.reloadData()
+   24|      0|        }
+   25|      1|    }
+   26|       |
+   27|       |}
+
+/Users/emmanuelokwara/Documents/Projects/CleanMVVMSample/CleanMVVMSample/Presentation/HomeScene/ViewModel/ArticlesListViewModel.swift:
+    1|       |//
+    2|       |//  ArticlesListViewModel.swift
+    3|       |//  CleanMVVMSample
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 17/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |import Foundation
+    9|       |
+   10|       |
+   11|       |class ArticlesListViewModel {
+   12|       |    
+   13|       |    var items: [Article]?
+   14|       |    
+   15|       |    let articleRepo: ArticleRepository
+   16|       |    
+   17|      1|    init() {
+   18|      1|        self.articleRepo = DefaultArticleRepository()
+   19|      1|    }
+   20|       |    
+   21|      1|    public func fetchArticles(completion: @escaping(() -> Void)) {
+   22|      1|        articleRepo.fetchArticles { (articles) in
+   23|      0|            self.items = articles
+   24|      0|            completion()
+   25|      0|        }
+   26|      1|    }
+   27|       |}
+
