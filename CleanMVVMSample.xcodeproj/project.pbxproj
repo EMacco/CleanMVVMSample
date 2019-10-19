@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124A880E23588B4700D9D227 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A880D23588B4700D9D227 /* AppAppearance.swift */; };
+		124A88372358AED100D9D227 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124A88362358AED100D9D227 /* HomeViewController.storyboard */; };
+		124A88392358AFA500D9D227 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A88382358AFA500D9D227 /* HomeViewController.swift */; };
 		12955BDB2357A1E900ECD095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12955BDA2357A1E900ECD095 /* AppDelegate.swift */; };
 		12955BDD2357A1E900ECD095 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12955BDC2357A1E900ECD095 /* SceneDelegate.swift */; };
-		12955BDF2357A1E900ECD095 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12955BDE2357A1E900ECD095 /* ViewController.swift */; };
-		12955BE22357A1E900ECD095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12955BE02357A1E900ECD095 /* Main.storyboard */; };
 		12955BE42357A1EB00ECD095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12955BE32357A1EB00ECD095 /* Assets.xcassets */; };
 		12955BE72357A1EB00ECD095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12955BE52357A1EB00ECD095 /* LaunchScreen.storyboard */; };
 		12955BF22357A1EC00ECD095 /* CleanMVVMSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12955BF12357A1EC00ECD095 /* CleanMVVMSampleTests.swift */; };
 		12955BFD2357A1EC00ECD095 /* CleanMVVMSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12955BFC2357A1EC00ECD095 /* CleanMVVMSampleUITests.swift */; };
+		129AC61F2358B87C0041569E /* ArticlesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AC61E2358B87C0041569E /* ArticlesTableView.swift */; };
+		129AC6222358B95A0041569E /* ArticleTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AC6212358B95A0041569E /* ArticleTitleTableViewCell.swift */; };
+		129AC6242358BF450041569E /* ArticlesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AC6232358BF450041569E /* ArticlesListViewModel.swift */; };
+		129AC6352359AA1B0041569E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AC6342359AA1B0041569E /* Article.swift */; };
+		129AC63B2359B12F0041569E /* ArticlesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AC63A2359B12F0041569E /* ArticlesRepository.swift */; };
+		129AC63D2359B19B0041569E /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AC63C2359B19B0041569E /* ArticleService.swift */; };
+		129AC640235A236B0041569E /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AC63F235A236B0041569E /* NetworkClient.swift */; };
 		12DCF435235880800087A23C /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCF434235880800087A23C /* Environment.swift */; };
-		5B72A7D270970872075C00C8 /* Pods_CleanMVVMSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED60810A824F21A78F547445 /* Pods_CleanMVVMSampleTests.framework */; };
 		8713CEEE7635FC8CF8420ED2 /* Pods_CleanMVVMSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE26F42EC74628D10F9D20B /* Pods_CleanMVVMSample.framework */; };
+		DE1149EEB9158C127850E829 /* Pods_CleanMVVMSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FE0DDB8E5BB09E1B7EE9C6 /* Pods_CleanMVVMSampleTests.framework */; };
 		F40A259C8054C3D0EAF8C6C6 /* Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE7ED5733D825D9DF787D2F /* Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,15 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0126CA842D4E6894569154F2 /* Pods-CleanMVVMSample-CleanMVVMSampleTests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleTests.debug staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleTests/Pods-CleanMVVMSample-CleanMVVMSampleTests.debug staging.xcconfig"; sourceTree = "<group>"; };
 		09E1DD3726C11AA385D1925D /* Pods-CleanMVVMSampleTests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.debug staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.debug staging.xcconfig"; sourceTree = "<group>"; };
+		0A482E208AC585C9C2C798FB /* Pods-CleanMVVMSample-CleanMVVMSampleTests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleTests.debug production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleTests/Pods-CleanMVVMSample-CleanMVVMSampleTests.debug production.xcconfig"; sourceTree = "<group>"; };
 		122E10F823586480002A88E8 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		122E10F92358648C002A88E8 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		122E10FA23586496002A88E8 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		124A880D23588B4700D9D227 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		124A88362358AED100D9D227 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		124A88382358AFA500D9D227 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		12955BD72357A1E900ECD095 /* CleanMVVMSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanMVVMSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12955BDA2357A1E900ECD095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12955BDC2357A1E900ECD095 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12955BDE2357A1E900ECD095 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		12955BE12357A1E900ECD095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12955BE32357A1EB00ECD095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12955BE62357A1EB00ECD095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12955BE82357A1EB00ECD095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,14 +68,26 @@
 		12955BF82357A1EC00ECD095 /* CleanMVVMSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanMVVMSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12955BFC2357A1EC00ECD095 /* CleanMVVMSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMVVMSampleUITests.swift; sourceTree = "<group>"; };
 		12955BFE2357A1EC00ECD095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		129AC61E2358B87C0041569E /* ArticlesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableView.swift; sourceTree = "<group>"; };
+		129AC6212358B95A0041569E /* ArticleTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTitleTableViewCell.swift; sourceTree = "<group>"; };
+		129AC6232358BF450041569E /* ArticlesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListViewModel.swift; sourceTree = "<group>"; };
+		129AC6342359AA1B0041569E /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		129AC63A2359B12F0041569E /* ArticlesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesRepository.swift; sourceTree = "<group>"; };
+		129AC63C2359B19B0041569E /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		129AC63F235A236B0041569E /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		12DCF434235880800087A23C /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1A7A543C0B48CEE7E3F70831 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug staging.xcconfig"; sourceTree = "<group>"; };
+		1FD1228D6A542A0E75861E65 /* Pods-CleanMVVMSample-CleanMVVMSampleTests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleTests.release production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleTests/Pods-CleanMVVMSample-CleanMVVMSampleTests.release production.xcconfig"; sourceTree = "<group>"; };
+		20305D7AD8B8C778007FF0FC /* Pods-CleanMVVMSample-CleanMVVMSampleTests.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleTests.debug development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleTests/Pods-CleanMVVMSample-CleanMVVMSampleTests.debug development.xcconfig"; sourceTree = "<group>"; };
+		25FE0DDB8E5BB09E1B7EE9C6 /* Pods_CleanMVVMSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanMVVMSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B1C2370A85AE229752D769 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.release staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.release staging.xcconfig"; sourceTree = "<group>"; };
 		3FED47155CEC8BFEC1E64F4E /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.release production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.release production.xcconfig"; sourceTree = "<group>"; };
 		59E127483A1A322FCD282E24 /* Pods-CleanMVVMSample.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.release production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.release production.xcconfig"; sourceTree = "<group>"; };
+		699B5D9AB5F75B2D4B6A60CD /* Pods-CleanMVVMSample-CleanMVVMSampleTests.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleTests.release staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleTests/Pods-CleanMVVMSample-CleanMVVMSampleTests.release staging.xcconfig"; sourceTree = "<group>"; };
 		774E423E0ACB48AF870528CD /* Pods-CleanMVVMSample.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.release development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.release development.xcconfig"; sourceTree = "<group>"; };
 		7D2892E34515D8EAA45B4D5E /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug development.xcconfig"; sourceTree = "<group>"; };
 		847D604A89977871C6C68F03 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.release development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.release development.xcconfig"; sourceTree = "<group>"; };
+		88BFD08A20B5571216F47F8F /* Pods-CleanMVVMSample-CleanMVVMSampleTests.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleTests.release development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleTests/Pods-CleanMVVMSample-CleanMVVMSampleTests.release development.xcconfig"; sourceTree = "<group>"; };
 		88DAD5FB3295756A6D640538 /* Pods-CleanMVVMSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.release.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.release.xcconfig"; sourceTree = "<group>"; };
 		9F2D6500537995D182A375A1 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9FE7ED5733D825D9DF787D2F /* Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +103,6 @@
 		E5E1BE120BB88C50B5B01474 /* Pods-CleanMVVMSampleTests.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.release development.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.release development.xcconfig"; sourceTree = "<group>"; };
 		EA6785EBC8E91F2E161E2FD3 /* Pods-CleanMVVMSample.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.debug staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.debug staging.xcconfig"; sourceTree = "<group>"; };
 		EB70C8608BF6A0BCCA72B262 /* Pods-CleanMVVMSampleTests.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSampleTests.release staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSampleTests/Pods-CleanMVVMSampleTests.release staging.xcconfig"; sourceTree = "<group>"; };
-		ED60810A824F21A78F547445 /* Pods_CleanMVVMSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanMVVMSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF13515FBDED738B28850B26 /* Pods-CleanMVVMSample.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.debug production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.debug production.xcconfig"; sourceTree = "<group>"; };
 		F0548A40BE4C109D228A5347 /* Pods-CleanMVVMSample.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample.release staging.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample/Pods-CleanMVVMSample.release staging.xcconfig"; sourceTree = "<group>"; };
 		F0E1CD1836B1634C3A241EC4 /* Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug production.xcconfig"; path = "Target Support Files/Pods-CleanMVVMSample-CleanMVVMSampleUITests/Pods-CleanMVVMSample-CleanMVVMSampleUITests.debug production.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B72A7D270970872075C00C8 /* Pods_CleanMVVMSampleTests.framework in Frameworks */,
+				DE1149EEB9158C127850E829 /* Pods_CleanMVVMSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +146,77 @@
 				12DCF434235880800087A23C /* Environment.swift */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		124A8812235890F900D9D227 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				124A88132358910000D9D227 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		124A88132358910000D9D227 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				129AC6292358F7560041569E /* Entities */,
+				129AC63E2359C2970041569E /* Services */,
+				129AC63F235A236B0041569E /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		124A88322358ADDA00D9D227 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				124A88332358ADFB00D9D227 /* HomeScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		124A88332358ADFB00D9D227 /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				124A88352358AE8F00D9D227 /* ViewModel */,
+				124A88342358AE8600D9D227 /* View */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		124A88342358AE8600D9D227 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				124A88362358AED100D9D227 /* HomeViewController.storyboard */,
+				124A88382358AFA500D9D227 /* HomeViewController.swift */,
+				124A883C2358B2CD00D9D227 /* ArticlesTableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		124A88352358AE8F00D9D227 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				129AC6232358BF450041569E /* ArticlesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		124A883B2358B1B600D9D227 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12955BE32357A1EB00ECD095 /* Assets.xcassets */,
+				12955BE52357A1EB00ECD095 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		124A883C2358B2CD00D9D227 /* ArticlesTableView */ = {
+			isa = PBXGroup;
+			children = (
+				129AC61E2358B87C0041569E /* ArticlesTableView.swift */,
+				129AC6202358B9460041569E /* Cells */,
+			);
+			path = ArticlesTableView;
 			sourceTree = "<group>";
 		};
 		12955BCE2357A1E900ECD095 = {
@@ -151,13 +244,11 @@
 		12955BD92357A1E900ECD095 /* CleanMVVMSample */ = {
 			isa = PBXGroup;
 			children = (
-				12955BDA2357A1E900ECD095 /* AppDelegate.swift */,
-				12955BDC2357A1E900ECD095 /* SceneDelegate.swift */,
-				12955BDE2357A1E900ECD095 /* ViewController.swift */,
-				12955BE02357A1E900ECD095 /* Main.storyboard */,
-				12955BE32357A1EB00ECD095 /* Assets.xcassets */,
-				12955BE52357A1EB00ECD095 /* LaunchScreen.storyboard */,
-				122E10F723586417002A88E8 /* Configs */,
+				129AC6382359B10D0041569E /* Data */,
+				124A8812235890F900D9D227 /* Infrastructure */,
+				12DCF436235886720087A23C /* Application */,
+				124A88322358ADDA00D9D227 /* Presentation */,
+				124A883B2358B1B600D9D227 /* Resources */,
 			);
 			path = CleanMVVMSample;
 			sourceTree = "<group>";
@@ -180,12 +271,63 @@
 			path = CleanMVVMSampleUITests;
 			sourceTree = "<group>";
 		};
+		129AC6202358B9460041569E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				129AC6212358B95A0041569E /* ArticleTitleTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		129AC6292358F7560041569E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				129AC6342359AA1B0041569E /* Article.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		129AC6382359B10D0041569E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				129AC6392359B1140041569E /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		129AC6392359B1140041569E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				129AC63A2359B12F0041569E /* ArticlesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		129AC63E2359C2970041569E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				129AC63C2359B19B0041569E /* ArticleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		12DCF436235886720087A23C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				12955BDA2357A1E900ECD095 /* AppDelegate.swift */,
+				124A880D23588B4700D9D227 /* AppAppearance.swift */,
+				12955BDC2357A1E900ECD095 /* SceneDelegate.swift */,
+				122E10F723586417002A88E8 /* Configs */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		3D4399EDBD171793DA2D9374 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ADE26F42EC74628D10F9D20B /* Pods_CleanMVVMSample.framework */,
 				9FE7ED5733D825D9DF787D2F /* Pods_CleanMVVMSample_CleanMVVMSampleUITests.framework */,
-				ED60810A824F21A78F547445 /* Pods_CleanMVVMSampleTests.framework */,
+				25FE0DDB8E5BB09E1B7EE9C6 /* Pods_CleanMVVMSampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,6 +359,12 @@
 				E5E1BE120BB88C50B5B01474 /* Pods-CleanMVVMSampleTests.release development.xcconfig */,
 				EB70C8608BF6A0BCCA72B262 /* Pods-CleanMVVMSampleTests.release staging.xcconfig */,
 				D28E8A7CB83629FD2B6F96FB /* Pods-CleanMVVMSampleTests.release production.xcconfig */,
+				20305D7AD8B8C778007FF0FC /* Pods-CleanMVVMSample-CleanMVVMSampleTests.debug development.xcconfig */,
+				0126CA842D4E6894569154F2 /* Pods-CleanMVVMSample-CleanMVVMSampleTests.debug staging.xcconfig */,
+				0A482E208AC585C9C2C798FB /* Pods-CleanMVVMSample-CleanMVVMSampleTests.debug production.xcconfig */,
+				88BFD08A20B5571216F47F8F /* Pods-CleanMVVMSample-CleanMVVMSampleTests.release development.xcconfig */,
+				699B5D9AB5F75B2D4B6A60CD /* Pods-CleanMVVMSample-CleanMVVMSampleTests.release staging.xcconfig */,
+				1FD1228D6A542A0E75861E65 /* Pods-CleanMVVMSample-CleanMVVMSampleTests.release production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -330,9 +478,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124A88372358AED100D9D227 /* HomeViewController.storyboard in Resources */,
 				12955BE72357A1EB00ECD095 /* LaunchScreen.storyboard in Resources */,
 				12955BE42357A1EB00ECD095 /* Assets.xcassets in Resources */,
-				12955BE22357A1E900ECD095 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,10 +608,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12955BDF2357A1E900ECD095 /* ViewController.swift in Sources */,
+				129AC63B2359B12F0041569E /* ArticlesRepository.swift in Sources */,
+				129AC6352359AA1B0041569E /* Article.swift in Sources */,
+				129AC61F2358B87C0041569E /* ArticlesTableView.swift in Sources */,
 				12DCF435235880800087A23C /* Environment.swift in Sources */,
 				12955BDB2357A1E900ECD095 /* AppDelegate.swift in Sources */,
+				129AC6222358B95A0041569E /* ArticleTitleTableViewCell.swift in Sources */,
+				124A88392358AFA500D9D227 /* HomeViewController.swift in Sources */,
+				129AC6242358BF450041569E /* ArticlesListViewModel.swift in Sources */,
 				12955BDD2357A1E900ECD095 /* SceneDelegate.swift in Sources */,
+				129AC63D2359B19B0041569E /* ArticleService.swift in Sources */,
+				124A880E23588B4700D9D227 /* AppAppearance.swift in Sources */,
+				129AC640235A236B0041569E /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,14 +655,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		12955BE02357A1E900ECD095 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				12955BE12357A1E900ECD095 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		12955BE52357A1EB00ECD095 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -640,7 +788,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Application/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -658,7 +806,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Application/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -821,7 +969,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Application/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -942,7 +1090,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Application/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1057,7 +1205,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Application/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1172,7 +1320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Configs/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CleanMVVMSample/Application/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

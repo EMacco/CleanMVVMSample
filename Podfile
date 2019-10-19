@@ -8,6 +8,7 @@ target 'CleanMVVMSample' do
   # Pods for CleanMVVMSample
   pod 'Alamofire', '~> 5.0.0-rc.2'
   pod 'lottie-ios'
+  # pod 'Swinject'
 
   target 'CleanMVVMSampleTests' do
     inherit! :search_paths

@@ -30,5 +30,9 @@ class CleanMVVMSampleTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func test_passingFunction() {
+        XCTAssertTrue(true)
+    }
 
 }

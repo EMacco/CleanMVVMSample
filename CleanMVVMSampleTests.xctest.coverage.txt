@@ -1,0 +1,39 @@
+    1|       |//
+    2|       |//  CleanMVVMSampleTests.swift
+    3|       |//  CleanMVVMSampleTests
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 16/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import XCTest
+   10|       |@testable import CleanMVVMSample
+   11|       |
+   12|       |class CleanMVVMSampleTests: XCTestCase {
+   13|       |
+   14|      3|    override func setUp() {
+   15|      3|        // Put setup code here. This method is called before the invocation of each test method in the class.
+   16|      3|    }
+   17|       |
+   18|      3|    override func tearDown() {
+   19|      3|        // Put teardown code here. This method is called after the invocation of each test method in the class.
+   20|      3|    }
+   21|       |
+   22|      1|    func testExample() {
+   23|      1|        // This is an example of a functional test case.
+   24|      1|        // Use XCTAssert and related functions to verify your tests produce the correct results.
+   25|      1|    }
+   26|       |
+   27|      1|    func testPerformanceExample() {
+   28|      1|        // This is an example of a performance test case.
+   29|     10|        self.measure {
+   30|     10|            // Put the code you want to measure the time of here.
+   31|     10|        }
+   32|      1|    }
+   33|       |    
+   34|      1|    func test_passingFunction() {
+   35|      1|        XCTAssertTrue(true)
+   36|      1|    }
+   37|       |
+   38|       |}
+

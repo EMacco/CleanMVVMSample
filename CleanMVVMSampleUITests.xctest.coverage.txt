@@ -1,0 +1,44 @@
+    1|       |//
+    2|       |//  CleanMVVMSampleUITests.swift
+    3|       |//  CleanMVVMSampleUITests
+    4|       |//
+    5|       |//  Created by Emmanuel Okwara on 16/10/2019.
+    6|       |//  Copyright © 2019 Emmanuel Okwara. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import XCTest
+   10|       |
+   11|       |class CleanMVVMSampleUITests: XCTestCase {
+   12|       |
+   13|      0|    override func setUp() {
+   14|      0|        // Put setup code here. This method is called before the invocation of each test method in the class.
+   15|      0|
+   16|      0|        // In UI tests it is usually best to stop immediately when a failure occurs.
+   17|      0|        continueAfterFailure = false
+   18|      0|
+   19|      0|        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+   20|      0|    }
+   21|       |
+   22|      0|    override func tearDown() {
+   23|      0|        // Put teardown code here. This method is called after the invocation of each test method in the class.
+   24|      0|    }
+   25|       |
+   26|      0|    func testExample() {
+   27|      0|        // UI tests must launch the application that they test.
+   28|      0|        let app = XCUIApplication()
+   29|      0|        app.launch()
+   30|      0|
+   31|      0|        // Use recording to get started writing UI tests.
+   32|      0|        // Use XCTAssert and related functions to verify your tests produce the correct results.
+   33|      0|    }
+   34|       |
+   35|      0|    func testLaunchPerformance() {
+   36|      0|        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+   37|      0|            // This measures how long it takes to launch your application.
+   38|      0|            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+   39|      0|                XCUIApplication().launch()
+   40|      0|            }
+   41|      0|        }
+   42|      0|    }
+   43|       |}
+
